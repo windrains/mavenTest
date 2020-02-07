@@ -14,6 +14,9 @@ class SpringBoot06DataJdbcApplicationTests {
     @Autowired
     DataSource dataSource;
 
+    /**
+     * 测试连接池
+     */
     @Test
     void contextLoads() throws SQLException {
         System.out.println(dataSource.getClass());
