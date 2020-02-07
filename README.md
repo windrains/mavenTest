@@ -1,5 +1,5 @@
-####此项目是一个单纯使用jdbc连接mysql的的简单springboot web项目
-####出现的问题   
+#### 此项目是一个单纯使用jdbc连接mysql的的简单springboot web项目  
+#### 出现的问题   
  * 测试数据库连接，SpringBoot06DataJdbcApplicationTests.contextLoads执行报错：  
    
 ```
@@ -41,7 +41,7 @@ if you want to utilize time zone support.
   ```
  提示信息表明数据库驱动com.mysql.jdbc.Driver'已经被弃用了，应当使用新的驱动com.mysql.cj.jdbc.Driver',  
  所以，按照提示更改jdbc.properties配置 .com.mysql.jdbc.Driver  改为  com.mysql.cj.jdbc.Driver   
- * 然后能正常原型。
+ * 然后能正常运行。
  
 
 
