@@ -43,5 +43,30 @@ if you want to utilize time zone support.
  所以，按照提示更改jdbc.properties配置 .com.mysql.jdbc.Driver  改为  com.mysql.cj.jdbc.Driver   
  * 然后能正常运行。
  
+* 改成Druid后报错  
+```
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-02-08 09:13:11.860 ERROR 10120 --- [           main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'spring.datasource' to javax.sql.DataSource:
+
+    Property: spring.datasource.filters
+    Value: stat,wall,log4j
+    Origin: class path resource [application.yml]:31:14
+    Reason: org.apache.log4j.Logger
+
+```
+报错原因：Druid默认使用log4j,而springboot2.0默认使用logback，项目缺少logback包
+两种解决方法：  
+    &nbsp;&nbsp; 1. 引入log4j包  
+    &nbsp;&nbsp; 2. yml文件参数spring.datasource.Value = stat,wall,slf4j,  
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;因为logback是slf4j的实现类.
+       
 
 
