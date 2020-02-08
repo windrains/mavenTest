@@ -15,7 +15,7 @@ public class MajorFoucsListController {
     @Autowired
     MmDishonestyListMapper mapper;
 
-    @GetMapping("/major/{operateNumber}")
+    @GetMapping("/majorFoucsList/{operateNumber}")
     public MmDishonestyList getDeptById(@PathVariable("operateNumber") String operateNumber){
         MmDishonestyList deptById = mapper.getDeptById(operateNumber);
 
@@ -23,11 +23,11 @@ public class MajorFoucsListController {
     }
 
     /**
-     * 请求url:   http://localhost:8080/major?operateNumber=2222&detail=abc甲乙丙丁81123
+     * 请求url:   http://localhost:8080/majorFoucsList?operateNumber=2222&detail=abc甲乙丙丁81123
      * @param mmDishonestyList
      * @return
      */
-    @GetMapping("/major")
+    @GetMapping("/majorFoucsList")
     public MmDishonestyList insertDept(MmDishonestyList mmDishonestyList){
         mapper.insertDept(mmDishonestyList);
         return mmDishonestyList;
