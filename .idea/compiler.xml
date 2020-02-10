@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="spring-boot-06-data-mybatis-xml" />
         <module name="spring-boot-06-data-jdbc" />
         <module name="mavenTest" />
         <module name="spring-boot-06-data-mybatis" />
@@ -16,6 +17,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="spring-boot-06-data-jdbc" options="-parameters" />
       <module name="spring-boot-06-data-mybatis" options="-parameters" />
+      <module name="spring-boot-06-data-mybatis-xml" options="-parameters" />
     </option>
   </component>
 </project>
