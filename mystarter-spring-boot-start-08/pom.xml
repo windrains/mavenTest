@@ -5,13 +5,16 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.explore</groupId>
-    <artifactId>mavenTest</artifactId>
-    <packaging>pom</packaging>
+    <artifactId>mystarter-spring-boot-start-08</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <modules>
-        <module>mystarter-spring-boot-start-08</module>
-        <module>mystarter-spring-boot-start-08</module>
-    </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.explore</groupId>
+            <artifactId>mystarter-spring-boot-start-autoconfigurer-08</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 
 
 </project>

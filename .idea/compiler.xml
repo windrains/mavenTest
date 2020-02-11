@@ -6,18 +6,24 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="spring-boot-06-data-mybatis-xml" />
         <module name="spring-boot-06-data-jdbc" />
-        <module name="mavenTest" />
+        <module name="mystarter-spring-boot-start-08" />
+        <module name="mystarter-spring-boot-start-teststarter-08" />
         <module name="spring-boot-06-data-mybatis" />
+        <module name="mystarter-spring-boot-start-autoconfigurer-08" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="mystarter-spring-boot-start-08" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="mystarter-spring-boot-start-autoconfigurer-08" options="-parameters" />
+      <module name="mystarter-spring-boot-start-teststarter-08" options="-parameters" />
       <module name="spring-boot-06-data-jdbc" options="-parameters" />
       <module name="spring-boot-06-data-mybatis" options="-parameters" />
-      <module name="spring-boot-06-data-mybatis-xml" options="-parameters" />
+      <module name="spring-boot-06-data-mybatis-xml" options="" />
     </option>
   </component>
 </project>

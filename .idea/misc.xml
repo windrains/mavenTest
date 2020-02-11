@@ -8,7 +8,15 @@
         <option value="$PROJECT_DIR$/spring-boot-06-data-jdbc/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-06-data-mybatis/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-06-data-mybatis-xml/pom.xml" />
+        <option value="$PROJECT_DIR$/mystarter-spring-boot-start-teststarter-08/pom.xml" />
+        <option value="$PROJECT_DIR$/mystarter-spring-boot-start-autoconfigurer-08/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/mystarter-spring-boot-start-08/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-06-data-mybatis-xml/mystarter-spring-boot-start/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
