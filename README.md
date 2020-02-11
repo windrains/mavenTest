@@ -7,3 +7,13 @@
 
 #### spring-boot-06-data-mybatis-xml是配置xml方式mybatis
 
+#### 创建starter并测试：
+* mystarter-spring-boot-start-autoconfigurer-08
+* mystarter-spring-boot-start-08
+* mystarter-spring-boot-start-teststarter-08
+
+
+
+
+
+
