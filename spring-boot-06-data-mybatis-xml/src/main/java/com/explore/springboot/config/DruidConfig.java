@@ -17,6 +17,9 @@ import java.util.Map;
 @Configuration
 public class DruidConfig {
 
+    /**
+     * 自定义DruidDataSource数据源，无论jdbcTemplate还是mybatis都将自动使用此数据源
+     */
     @ConfigurationProperties(prefix = "spring.datasource")
     @Bean
     public DataSource druid(){
