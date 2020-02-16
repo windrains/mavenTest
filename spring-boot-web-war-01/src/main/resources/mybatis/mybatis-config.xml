@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!--  设置表的下划线与bean的大写字母对应,适用于注解和xml方式，
+          而com.explore.springboot.config.MybatisConfig.java对xml中的sql不起作用，只对注解方法起作用
+    -->
+    <settings>
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+    </settings>
+</configuration>

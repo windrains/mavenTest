@@ -33,5 +33,7 @@ spring:
     maxPoolPreparedStatementPerConnectionSize: 20
     useGlobalDataSourceStat: true
     connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
-
-
+server:
+  port: 8082
+  servlet:
+    context-path: /demo
