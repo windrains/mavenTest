@@ -1,4 +1,22 @@
+server:
+  servlet:
+    context-path: /war01
 
+
+# 日志相关配置
+logging:
+  # 设置某包下的日志打印级别
+  level:
+    com.explore: debug
+  #指定日志文件
+  # 不指定路径在当前项目下生成springboot.log日志
+  # 可以指定完整的路径； G:/springboot.log
+  file:
+#    name: web01.log
+    name: D:/softwareInstall/idea2019/workspace/personal/log/spring-boot-web-war-01.log
+    # 在当前磁盘的根路径下创建spring文件夹和里面的log文件夹；使用 spring.log 作为默认文件
+    # name与path只设置一个
+    # path: /spring/log
 
 
 # springboot2.0默认数据源配置HikariDataSource
@@ -39,8 +57,26 @@ spring:
 
 
 #    schema:
-#      - classpath:sql/department.sql
-#      - classpath:sql/employee.sql
+#      - classpath:mybatis/sql/department.sql
+#      - classpath:mybatis/sql/employee.sql
+
+
+  # 配置jsp视图解析器前后缀,嵌入式的servlet不支持jsp,外置的Servlet容器支持jsp,但是要进行一下配置。
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+      view-names: '*'
+
+  # springboot默认支持thymeleaf模板，默认不需配置thymeleaf，但是要使thymeleaf与jsp共存，就必须配置thymeleaf。
+  thymeleaf:
+    # 开发时关闭缓存，不然没法看到实时页面
+    cache: false
+    # 配置渲染文件的位置，默认位置为：classpath:/templates
+    prefix: classpath:/templates
+    # 配置渲染文件的后缀
+    suffix: .html
+    view-names: /*
 
 
 mybatis:
@@ -49,7 +85,5 @@ mybatis:
   # 指定sql映射文件位置
   mapper-locations: classpath:mybatis/mapper/*.xml
 
-server:
-  port: 8082
-  servlet:
-    context-path: /demo
+
+

@@ -9,12 +9,16 @@
         <module name="spring-boot-06-data-mybatis" />
         <module name="spring-boot-06-data-jdbc" />
         <module name="mystarter-spring-boot-start-08" />
+        <module name="aaaMaven" />
         <module name="spring-boot-web-war-01" />
         <module name="mystarter-spring-boot-start-autoconfigurer-08" />
         <module name="mystarter-spring-boot-start-teststarter-08" />
+        <module name="spring-boot-web-jar-02" />
+        <module name="spring-boot-web-war-03" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="aaaMaven" target="1.5" />
       <module name="mystarter-spring-boot-start-08" target="1.5" />
     </bytecodeTargetLevel>
   </component>
@@ -25,7 +29,9 @@
       <module name="spring-boot-06-data-jdbc" options="-parameters" />
       <module name="spring-boot-06-data-mybatis" options="-parameters" />
       <module name="spring-boot-06-data-mybatis-xml" options="" />
+      <module name="spring-boot-web-jar-02" options="-parameters" />
       <module name="spring-boot-web-war-01" options="-parameters" />
+      <module name="spring-boot-web-war-03" options="-parameters" />
     </option>
   </component>
 </project>

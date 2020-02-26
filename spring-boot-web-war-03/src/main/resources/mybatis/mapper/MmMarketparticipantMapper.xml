@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.explore.springboot.majorFoucsList.mapper.MmMarketparticipantMapper">
+    <select id="partId"
+            resultType="com.explore.springboot.majorFoucsList.bean.MmMarketparticipant" >
+        select
+        participant_name participantName,
+        participant_code participantCode
+        from mm_marketparticipant
+        where participant_id = #{participantId}
+    </select>
+
+    <select id="queryPerson" resultType="java.util.Map">
+		select
+        participant_name participantName
+        from mm_marketparticipant
+        where participant_id = #{param.participantId}
+    </select>
+
+
+</mapper>
