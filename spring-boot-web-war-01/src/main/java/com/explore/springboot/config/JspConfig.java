@@ -6,6 +6,9 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.springframework.web.servlet.view.JstlView;
 
+/**
+ * 配置jsp视图解析器
+ */
 @Configuration
 public class JspConfig {
     @Value("${spring.mvc.view.prefix}")

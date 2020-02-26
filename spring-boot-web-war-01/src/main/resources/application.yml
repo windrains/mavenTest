@@ -61,6 +61,7 @@ spring:
 #      - classpath:mybatis/sql/employee.sql
 
 
+  # 以“/”开头访问的就是html，以文件名开头访问的就是jsp
   # 配置jsp视图解析器前后缀,嵌入式的servlet不支持jsp,外置的Servlet容器支持jsp,但是要进行一下配置。
   mvc:
     view:
