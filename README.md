@@ -13,6 +13,11 @@
 * mystarter-spring-boot-start-teststarter-08
 
 
+#### spring-boot-web-war-01是整合thymeleaf和jsp的示例
+
+#### spring-boot-web-jar-02是thymeleaf及servlet、filter、listener的示例
+
+### spring-boot-web-war-03是jsp示例
 
 
 
